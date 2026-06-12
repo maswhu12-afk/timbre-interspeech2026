@@ -1,0 +1,22 @@
+{
+  "title": "TIMBRE: Layer-Wise Cross-Lingual Speech Emotion Recognition Across 49 Layers and 26 Corpora",
+  "description": "Code and data to reproduce the Interspeech 2026 paper TIMBRE (paper #579). Run reproduce.py to regenerate every reported number from the included data: the CRIS layer (layer 15, 31% depth; cross-corpus F1=0.392 with a 24.6% collapse at layer 45), within/between-type and -family contrasts with corpus-clustered bootstrap CIs, the acoustic vs. wav2vec2 mean-pool comparison (grand F1 0.2521 vs. 0.3553; acoustic features prevail on 3 of 26 corpora), and the acoustic-feature ablation. v1.2 adds the acoustic 26x26 cross-corpus matrix, replaces the Exp 2 mean-pool matrix with the recomputed final-data version (the superseded early-extraction matrix is kept for provenance), extends the corpus license table to all 26 corpora, and includes the supplementary PDF. Base model: the public wav2vec2-xls-r-1b checkpoint on Hugging Face (not redistributed). Corpus audio not redistributed; sources and licenses in CORPUS_SOURCES.md.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Marchenko, Anatoly",
+      "orcid": "0009-0001-7028-0461"
+    }
+  ],
+  "keywords": [
+    "speech emotion recognition",
+    "cross-lingual",
+    "wav2vec2",
+    "layer probing",
+    "CRIS",
+    "Interspeech 2026"
+  ],
+  "version": "v1.2"
+}

@@ -1,0 +1,862 @@
+{
+  "ased_amharic": {
+    "canonical_name": "ased_amharic",
+    "display_name": "ASED",
+    "language": "Amharic",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.8728,
+      "svm_f1w": 0.9047,
+      "rf_f1w": 0.8139,
+      "ablation": {
+        "Perturbation": -0.027,
+        "Frequency": -0.0376,
+        "MFCC": -0.079,
+        "Spectral": -0.0125,
+        "Formant": -0.0056,
+        "Temporal": -0.0037
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.8203,
+      "f1w_std": 0.0238,
+      "n_samples": 1942,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 24,
+      "peak_f1": 0.9906,
+      "n_samples": 2442,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2931,
+    "logreg_vs_gpu_ratio": 82.8,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "cafe_french": {
+    "canonical_name": "cafe_french",
+    "display_name": "CaFE",
+    "language": "French",
+    "prosodic_type": "syllable-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.5281,
+      "svm_f1w": 0.5695,
+      "rf_f1w": 0.5159,
+      "ablation": {
+        "Perturbation": -0.0113,
+        "Frequency": 0.0008,
+        "MFCC": -0.0843,
+        "Spectral": 0.0104,
+        "Formant": 0.0163,
+        "Temporal": 0.0024
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.4967,
+      "f1w_std": 0.0669,
+      "n_samples": 129,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 13,
+      "peak_f1": 0.8221,
+      "n_samples": 165,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2888,
+    "logreg_vs_gpu_ratio": 60.4,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "caves": {
+    "canonical_name": "caves",
+    "display_name": "CAVES",
+    "language": "Cantonese",
+    "prosodic_type": "tonal",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.8233,
+      "svm_f1w": 0.835,
+      "rf_f1w": 0.7633,
+      "ablation": {
+        "Perturbation": -0.0131,
+        "Frequency": -0.0388,
+        "MFCC": -0.1904,
+        "Spectral": -0.0106,
+        "Formant": -0.0048,
+        "Temporal": -0.0077
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.5722,
+      "f1w_std": 0.0147,
+      "n_samples": 1969,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 14,
+      "peak_f1": 0.8728,
+      "n_samples": 2475,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2285,
+    "logreg_vs_gpu_ratio": 65.6,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "dusha_russian": {
+    "canonical_name": "dusha_russian",
+    "display_name": "DUSHA",
+    "language": "Russian",
+    "prosodic_type": "stress-timed",
+    "data_type": "crowd-sourced",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.5205,
+      "svm_f1w": 0.5261,
+      "rf_f1w": 0.5059,
+      "ablation": {
+        "Perturbation": -0.0028,
+        "Frequency": -0.0458,
+        "MFCC": -0.0415,
+        "Spectral": -0.0037,
+        "Formant": 0.0105,
+        "Temporal": -0.0002
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.4814,
+      "f1w_std": 0.0221,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 35,
+      "peak_f1": 0.7687,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.2984,
+    "logreg_vs_gpu_ratio": 62.6,
+    "class_mismatch": false
+  },
+  "emodb": {
+    "canonical_name": "emodb",
+    "display_name": "EmoDB",
+    "language": "German",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.8299,
+      "svm_f1w": 0.8973,
+      "rf_f1w": 0.8208,
+      "ablation": {
+        "Perturbation": -0.0152,
+        "Frequency": -0.0215,
+        "MFCC": -0.0823,
+        "Spectral": -0.0043,
+        "Formant": -0.0028,
+        "Temporal": 0.0094
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.8842,
+      "f1w_std": 0.0514,
+      "n_samples": 312,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 12,
+      "peak_f1": 0.9921,
+      "n_samples": 381,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.267,
+    "logreg_vs_gpu_ratio": 89.1,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "emouerj_portuguese": {
+    "canonical_name": "emouerj_portuguese",
+    "display_name": "emoUERJ",
+    "language": "Portuguese-BR",
+    "prosodic_type": "syllable-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.8645,
+      "svm_f1w": 0.907,
+      "rf_f1w": 0.8486,
+      "ablation": {
+        "Perturbation": -0.0372,
+        "Frequency": 0.0055,
+        "MFCC": -0.0432,
+        "Spectral": -0.0001,
+        "Formant": -0.0049,
+        "Temporal": -0.0026
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.8284,
+      "f1w_std": 0.017,
+      "n_samples": 377,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 35,
+      "peak_f1": 0.9492,
+      "n_samples": 377,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.2576,
+    "logreg_vs_gpu_ratio": 87.3,
+    "class_mismatch": false
+  },
+  "emozionalmente_italian": {
+    "canonical_name": "emozionalmente_italian",
+    "display_name": "Emozionalmente",
+    "language": "Italian",
+    "prosodic_type": "syllable-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.5146,
+      "svm_f1w": 0.5177,
+      "rf_f1w": 0.4709,
+      "ablation": {
+        "Perturbation": -0.0311,
+        "Frequency": -0.0601,
+        "MFCC": -0.0552,
+        "Spectral": -0.0047,
+        "Formant": -0.0102,
+        "Temporal": -0.0044
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.5274,
+      "f1w_std": 0.0125,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 38,
+      "peak_f1": 0.8133,
+      "n_samples": 2500,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.3211,
+    "logreg_vs_gpu_ratio": 64.8,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "esd_zh": {
+    "canonical_name": "esd_zh",
+    "display_name": "ESD-ZH",
+    "language": "Mandarin",
+    "prosodic_type": "tonal",
+    "data_type": "multi-speaker",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.886,
+      "svm_f1w": 0.9236,
+      "rf_f1w": 0.8035,
+      "ablation": {
+        "Perturbation": -0.0064,
+        "Frequency": -0.0227,
+        "MFCC": -0.1467,
+        "Spectral": -0.001,
+        "Formant": -0.004,
+        "Temporal": -0.0007
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.9305,
+      "f1w_std": 0.0132,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 11,
+      "peak_f1": 1.0,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.2783,
+    "logreg_vs_gpu_ratio": 93.0,
+    "class_mismatch": false
+  },
+  "estonian_eekk": {
+    "canonical_name": "estonian_eekk",
+    "display_name": "estonian_eekk",
+    "language": "Estonian",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {},
+    "logreg_within": {
+      "f1w_mean": 0.4624,
+      "f1w_std": 0.0336,
+      "n_samples": 1164,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 16,
+      "peak_f1": 0.4535,
+      "n_samples": 1164,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.1891,
+    "logreg_vs_gpu_ratio": 102.0,
+    "class_mismatch": false
+  },
+  "hikia_korean": {
+    "canonical_name": "hikia_korean",
+    "display_name": "Hi,KIA",
+    "language": "Korean",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.7667,
+      "svm_f1w": 0.7743,
+      "rf_f1w": 0.7709,
+      "ablation": {
+        "Perturbation": -0.0207,
+        "Frequency": -0.0195,
+        "MFCC": -0.0977,
+        "Spectral": -0.0016,
+        "Formant": -0.0059,
+        "Temporal": -0.0079
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.7021,
+      "f1w_std": 0.0288,
+      "n_samples": 484,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 17,
+      "peak_f1": 0.8497,
+      "n_samples": 484,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.2033,
+    "logreg_vs_gpu_ratio": 82.6,
+    "class_mismatch": false
+  },
+  "jvnv_japanese": {
+    "canonical_name": "jvnv_japanese",
+    "display_name": "JVNV",
+    "language": "Japanese",
+    "prosodic_type": "pitch-accent",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.6949,
+      "svm_f1w": 0.7497,
+      "rf_f1w": 0.6903,
+      "ablation": {
+        "Perturbation": -0.0135,
+        "Frequency": -0.0164,
+        "MFCC": -0.1653,
+        "Spectral": -0.004,
+        "Formant": 0.0046,
+        "Temporal": 0.0008
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.7497,
+      "f1w_std": 0.0198,
+      "n_samples": 602,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.2127
+  },
+  "kannada_ser": {
+    "canonical_name": "kannada_ser",
+    "display_name": "kannada_ser",
+    "language": "Kannada",
+    "prosodic_type": "syllable-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {},
+    "logreg_within": {
+      "f1w_mean": 0.4417,
+      "f1w_std": 0.107,
+      "n_samples": 116,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 37,
+      "peak_f1": 0.5899,
+      "n_samples": 147,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2885,
+    "logreg_vs_gpu_ratio": 74.9,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "kazemotts_kazakh": {
+    "canonical_name": "kazemotts_kazakh",
+    "display_name": "KazEmoTTS",
+    "language": "Kazakh",
+    "prosodic_type": "stress-timed",
+    "data_type": "TTS",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.8891,
+      "svm_f1w": 0.8825,
+      "rf_f1w": 0.8468,
+      "ablation": {
+        "Perturbation": -0.0101,
+        "Frequency": -0.0759,
+        "MFCC": -0.0437,
+        "Spectral": -0.004,
+        "Formant": -0.0059,
+        "Temporal": -0.0014
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.9481,
+      "f1w_std": 0.0122,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 8,
+      "peak_f1": 0.9311,
+      "n_samples": 2500,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2226,
+    "logreg_vs_gpu_ratio": 101.8,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "mder_arabic": {
+    "canonical_name": "mder_arabic",
+    "display_name": "MDER-MA",
+    "language": "Arabic-Moroccan",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.9403,
+      "svm_f1w": 0.969,
+      "rf_f1w": 0.926,
+      "ablation": {
+        "Perturbation": 0.0024,
+        "Frequency": -0.0095,
+        "MFCC": -0.069,
+        "Spectral": 0.0001,
+        "Formant": -0.0047,
+        "Temporal": -0.0069
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.9072,
+      "f1w_std": 0.0274,
+      "n_samples": 420,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 40,
+      "peak_f1": 0.9834,
+      "n_samples": 420,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.2257,
+    "logreg_vs_gpu_ratio": 92.3,
+    "class_mismatch": false
+  },
+  "mesd_spanish": {
+    "canonical_name": "mesd_spanish",
+    "display_name": "MESD",
+    "language": "Spanish",
+    "prosodic_type": "syllable-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.7731,
+      "svm_f1w": 0.8009,
+      "rf_f1w": 0.7539,
+      "ablation": {
+        "Perturbation": -0.0241,
+        "Frequency": -0.0607,
+        "MFCC": -0.1104,
+        "Spectral": 0.0122,
+        "Formant": 0.0064,
+        "Temporal": 0.0028
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.7152,
+      "f1w_std": 0.0309,
+      "n_samples": 574,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 9,
+      "peak_f1": 0.9498,
+      "n_samples": 718,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2475,
+    "logreg_vs_gpu_ratio": 75.3,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "nemo_polish": {
+    "canonical_name": "nemo_polish",
+    "display_name": "nEMO",
+    "language": "Polish",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.8872,
+      "svm_f1w": 0.9036,
+      "rf_f1w": 0.8315,
+      "ablation": {
+        "Perturbation": -0.0066,
+        "Frequency": -0.0308,
+        "MFCC": -0.1565,
+        "Spectral": -0.0021,
+        "Formant": 0.001,
+        "Temporal": -0.0058
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.8048,
+      "f1w_std": 0.0151,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 13,
+      "peak_f1": 0.9764,
+      "n_samples": 2500,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2392,
+    "logreg_vs_gpu_ratio": 82.4,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "oreau_french": {
+    "canonical_name": "oreau_french",
+    "display_name": "Oreau",
+    "language": "French",
+    "prosodic_type": "syllable-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.43,
+      "svm_f1w": 0.4567,
+      "rf_f1w": 0.4456,
+      "ablation": {
+        "Perturbation": -0.0149,
+        "Frequency": -0.0282,
+        "MFCC": -0.0122,
+        "Spectral": -0.0038,
+        "Formant": 0.01,
+        "Temporal": -0.0006
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.5259,
+      "f1w_std": 0.0408,
+      "n_samples": 288,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 13,
+      "peak_f1": 0.7642,
+      "n_samples": 359,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2276,
+    "logreg_vs_gpu_ratio": 68.8,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "pavoque_german": {
+    "canonical_name": "pavoque_german",
+    "display_name": "pavoque_german",
+    "language": "German",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {},
+    "logreg_within": {
+      "f1w_mean": 0.9366,
+      "f1w_std": 0.0154,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 11,
+      "peak_f1": 0.993,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.2129,
+    "logreg_vs_gpu_ratio": 94.3,
+    "class_mismatch": false
+  },
+  "ravdess": {
+    "canonical_name": "ravdess",
+    "display_name": "RAVDESS",
+    "language": "English",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.7225,
+      "svm_f1w": 0.7776,
+      "rf_f1w": 0.6607,
+      "ablation": {
+        "Perturbation": 0.009,
+        "Frequency": -0.0254,
+        "MFCC": -0.1389,
+        "Spectral": 0.0143,
+        "Formant": 0.0002,
+        "Temporal": 0.0
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.7126,
+      "f1w_std": 0.0438,
+      "n_samples": 864,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 10,
+      "peak_f1": 0.9203,
+      "n_samples": 1056,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2638,
+    "logreg_vs_gpu_ratio": 77.4,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "resd_russian": {
+    "canonical_name": "resd_russian",
+    "display_name": "RESD",
+    "language": "Russian",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.682,
+      "svm_f1w": 0.7267,
+      "rf_f1w": 0.648,
+      "ablation": {
+        "Perturbation": 0.0092,
+        "Frequency": -0.0248,
+        "MFCC": -0.2035,
+        "Spectral": -0.0021,
+        "Formant": -0.0034,
+        "Temporal": -0.0039
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.5832,
+      "f1w_std": 0.0156,
+      "n_samples": 790,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 3,
+      "peak_f1": 0.736,
+      "n_samples": 1013,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2965,
+    "logreg_vs_gpu_ratio": 79.2,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "shemo_persian": {
+    "canonical_name": "shemo_persian",
+    "display_name": "shemo_persian",
+    "language": "Persian",
+    "prosodic_type": "syllable-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {},
+    "logreg_within": {
+      "f1w_mean": 0.6942,
+      "f1w_std": 0.0252,
+      "n_samples": 1511,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 15,
+      "peak_f1": 0.8479,
+      "n_samples": 1697,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2464,
+    "logreg_vs_gpu_ratio": 81.9,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "subesco_bengali": {
+    "canonical_name": "subesco_bengali",
+    "display_name": "SUBESCO",
+    "language": "Bengali",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.9025,
+      "svm_f1w": 0.9298,
+      "rf_f1w": 0.8357,
+      "ablation": {
+        "Perturbation": -0.0042,
+        "Frequency": -0.0323,
+        "MFCC": -0.1343,
+        "Spectral": 0.0032,
+        "Formant": 0.0045,
+        "Temporal": -0.0013
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.7219,
+      "f1w_std": 0.0195,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 10,
+      "peak_f1": 0.974,
+      "n_samples": 2500,
+      "n_classes": 5
+    },
+    "cpu_cross_outgoing_mean": 0.2802,
+    "logreg_vs_gpu_ratio": 74.1,
+    "class_mismatch": true,
+    "class_warning": "LogReg 4 cl vs GPU 5 cl"
+  },
+  "thai_ser": {
+    "canonical_name": "thai_ser",
+    "display_name": "Thai-SER",
+    "language": "Thai",
+    "prosodic_type": "tonal",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.7401,
+      "svm_f1w": 0.753,
+      "rf_f1w": 0.7,
+      "ablation": {
+        "Perturbation": -0.0145,
+        "Frequency": -0.0145,
+        "MFCC": -0.0408,
+        "Spectral": -0.007,
+        "Formant": -0.0037,
+        "Temporal": -0.0065
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.6935,
+      "f1w_std": 0.0115,
+      "n_samples": 1914,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 17,
+      "peak_f1": 0.7861,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.2319,
+    "logreg_vs_gpu_ratio": 88.2,
+    "class_mismatch": false
+  },
+  "turevdb_turkish": {
+    "canonical_name": "turevdb_turkish",
+    "display_name": "TurEV-DB",
+    "language": "Turkish",
+    "prosodic_type": "stress-timed",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.5038,
+      "svm_f1w": 0.5264,
+      "rf_f1w": 0.4679,
+      "ablation": {
+        "Perturbation": 0.003,
+        "Frequency": 0.0048,
+        "MFCC": -0.0852,
+        "Spectral": 0.0038,
+        "Formant": 0.0081,
+        "Temporal": -0.0082
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.4225,
+      "f1w_std": 0.1059,
+      "n_samples": 1735,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 13,
+      "peak_f1": 0.9492,
+      "n_samples": 1735,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.2335,
+    "logreg_vs_gpu_ratio": 44.5,
+    "class_mismatch": false
+  },
+  "urdu_dataset": {
+    "canonical_name": "urdu_dataset",
+    "display_name": "URDU-Dataset",
+    "language": "Urdu",
+    "prosodic_type": "stress-timed",
+    "data_type": "natural",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.9275,
+      "svm_f1w": 0.9624,
+      "rf_f1w": 0.9376,
+      "ablation": {
+        "Perturbation": 0.0025,
+        "Frequency": -0.0049,
+        "MFCC": -0.0481,
+        "Spectral": -0.0076,
+        "Formant": 0.0051,
+        "Temporal": 0.0071
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.9013,
+      "f1w_std": 0.0297,
+      "n_samples": 400,
+      "n_classes": 4
+    },
+    "gpu_within": {
+      "peak_layer": 3,
+      "peak_f1": 0.9597,
+      "n_samples": 400,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.1942,
+    "logreg_vs_gpu_ratio": 93.9,
+    "class_mismatch": false
+  },
+  "visec_vietnamese": {
+    "canonical_name": "visec_vietnamese",
+    "display_name": "VISEC",
+    "language": "Vietnamese",
+    "prosodic_type": "tonal",
+    "data_type": "acted",
+    "cpu_acoustic": {
+      "xgboost_f1w": 0.6311,
+      "svm_f1w": 0.6218,
+      "rf_f1w": 0.583,
+      "ablation": {
+        "Perturbation": -0.0086,
+        "Frequency": -0.0234,
+        "MFCC": -0.051,
+        "Spectral": -0.0052,
+        "Formant": 0.0029,
+        "Temporal": -0.002
+      }
+    },
+    "logreg_within": {
+      "f1w_mean": 0.4817,
+      "f1w_std": 0.024,
+      "n_samples": 2000,
+      "n_classes": 4
+    },
+    "cpu_cross_outgoing_mean": 0.3045
+  }
+}
