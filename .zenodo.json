@@ -18,5 +18,13 @@
     "CRIS",
     "Interspeech 2026"
   ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/maswhu12-afk/timbre-interspeech2026",
+      "relation": "isSupplementedBy",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
   "version": "v1.2"
 }
