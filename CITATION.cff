@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software or the derived data, please cite the archived release
+  (Zenodo DOI) and the Interspeech 2026 paper it accompanies.
+title: >-
+  TIMBRE: Layer-Wise Cross-Lingual Speech Emotion Recognition Across 49 Layers
+  and 26 Corpora
+abstract: >-
+  Code and derived data to reproduce the Interspeech 2026 TIMBRE paper. The study
+  probes all 49 layers of wav2vec2-xls-r-1b for cross-lingual speech emotion
+  transfer across 26 corpora (23 languages, 14 families), a 49x26x26 transfer
+  tensor of 31,850 cross-corpus experiments, and identifies the CRIS layer
+  (Cross-lingual Representational Integration Stratum) at layer 15.
+type: software
+authors:
+  - family-names: Marchenko
+    given-names: Anatoly
+    affiliation: Independent Researcher
+    orcid: https://orcid.org/0009-0001-7028-0461
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20584918
+    description: Concept DOI, always resolves to the latest archived version
+  - type: doi
+    value: 10.5281/zenodo.20662633
+    description: DOI of release v1.2
+repository-code: https://github.com/maswhu12-afk/timbre-interspeech2026
+url: https://doi.org/10.5281/zenodo.20584918
+version: v1.2
+date-released: 2026-06-12
+license: MIT
+keywords:
+  - speech emotion recognition
+  - cross-lingual
+  - wav2vec2
+  - layer probing
+  - CRIS
+  - reproducible research
+preferred-citation:
+  type: conference-paper
+  title: >-
+    TIMBRE: Layer-Wise Cross-Lingual Speech Emotion Recognition Across 49 Layers
+    and 26 Corpora
+  authors:
+    - family-names: Marchenko
+      given-names: Anatoly
+      affiliation: Independent Researcher
+      orcid: https://orcid.org/0009-0001-7028-0461
+  collection-title: Proc. Interspeech 2026
+  conference:
+    name: Interspeech 2026
+  year: 2026
+  notes: To appear.
